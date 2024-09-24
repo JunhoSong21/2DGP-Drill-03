@@ -14,27 +14,22 @@ def draw_boy(x, y):
     delay(0.01)
 
 def run_bottom():
-    print('BOTTOM')
     for x in range(400, 780, 10):
         draw_boy(x, 90)
 
 def run_right():
-    print('RIGHT')
     for y in range(90, 550, 10):
         draw_boy(780, y)
 
 def run_top():
-    print('TOP')
     for x in range(780, 20, -10):
         draw_boy(x, 550)
 
 def run_left():
-    print('LEFT')
     for y in range(550, 90, -10):
         draw_boy(20, y)
 
 def run_second_bottom():
-    print('BOTTOM')
     for x in range(20, 400, 10):
         draw_boy(x, 90)
 
@@ -58,16 +53,20 @@ def run_circle():
         draw_boy(x, y)
 
 def run_triangle_bottom():
-    pass
+    for x in range(400, 780, 10):
+        draw_boy(x, 90)
 
 def run_triangle_right():
-    pass
+    for x, y in zip(range(780, 400, -10), range(90, 564, 13)):
+        draw_boy(x, y)
 
 def run_triangle_left():
-    pass
+    for x, y in zip(range(400, 20, -10), range(564, 90, -13)):
+        draw_boy(x, y)
 
 def run_triangle_second_bottom():
-    pass
+    for x in range(20, 400, 10):
+        draw_boy(x, 90)
 
 def run_triangle():
     print('TRIANGLE')
@@ -77,8 +76,8 @@ def run_triangle():
     run_triangle_second_bottom()
 
 while True:
-    #run_rectangle()
-    #run_circle()
+    run_rectangle()
+    run_circle()
     run_triangle()
 
 close_canvas()
