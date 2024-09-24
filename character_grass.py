@@ -9,9 +9,9 @@ boy = load_image('character.png')
 
 def draw_boy(x, y):
     clear_canvas_now()
+    grass.draw_now(400, 30)
     boy.draw_now(x, y)
     delay(0.01)
-
 
 def run_top():
     print('TOP')
@@ -42,9 +42,9 @@ def run_rectangle():
 def run_circle():
     print('CIRCLE')
 
-    r, cx, cy = 300, 800 // 2, 600 // 2
+    r, cx, cy = 210, 800 // 2, 600 // 2
 
-    for d in range(0, 360):
+    for d in range(-90, 270):
         x = r * math.cos(math.radians(d)) + cx
         y = r * math.sin(math.radians(d)) + cy
 
