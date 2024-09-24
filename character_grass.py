@@ -45,7 +45,6 @@ def run_rectangle():
     run_top()
     run_left()
     run_second_bottom()
-    pass
 
 def run_circle():
     print('CIRCLE')
@@ -57,8 +56,6 @@ def run_circle():
         y = r * math.sin(math.radians(d)) + cy
 
         draw_boy(x, y)
-    pass
-
 
 while True:
     run_rectangle()
