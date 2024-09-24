@@ -57,8 +57,13 @@ def run_circle():
 
         draw_boy(x, y)
 
+def run_triangle():
+    print('TRIANGLE')
+    pass
+
 while True:
-    run_rectangle()
-    run_circle()
+    #run_rectangle()
+    #run_circle()
+    run_triangle()
 
 close_canvas()
